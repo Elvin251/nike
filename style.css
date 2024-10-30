@@ -1,21 +1,24 @@
 body{
-background-color: olivedrab;
+
+    background-color: rgb(50, 81, 42);
 }
+
 .container{
     background-color: white;
   
     height: 80vh;
     width: 85vw;
     margin: 70px auto;
-    box-shadow: 10px 15px rgb(24, 24, 24,0.1);
+    box-shadow: 15px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 .left {
-  width: 40vw;  
+  width: 35vw;  
   overflow: auto;
   display: flex;
 padding-top: 130px;
 float: left;
+padding-left: 50px;
 }
 .right{
     float: right;
@@ -43,10 +46,24 @@ h4 div{
 margin-left: 20px;
 margin-top: 6px;
 }
+.size div:hover{
+    animation-name: f4;
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+}
+@keyframes f4 {
+    from {background-color: blue; }
+   
+to{   background-color:    rgb(255, 0, 0); }
+
+
+
+}
 h4{
     display: flex;
     font-size: 25px;
-    margin-left: 200px;
+    margin-left: 120px;
 }
 .iki{
 background-color: grey;
@@ -59,6 +76,37 @@ background-color: grey;
 }
 .size{
     margin-left: 100px;
+}
+h2,h1,h3,p{
+    margin-left: 120px;
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}
+button{
+    background-color: rgb(50, 81, 42);
+    color: white;
+    width: 300px;
+    height: 50px;
+    margin-left: 120px;
+    border: none;
+
+}
+button:hover{
+    animation-name: f5;
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes f5 {
+    from {   background-color: rgb(50, 81, 42); }
+   
+to{   background-color:    rgb(255, 0, 0); }
+
+
+
 }
 
 
